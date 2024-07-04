@@ -1,0 +1,14 @@
+name: TownTal
+version: '${project.version}'
+main: org.chesterirod.towntal.TownTal
+api-version: '1.20'
+commands:
+  talgive:
+    usage: /talgive tal name
+    permission: Town.Tal
+    tab-completer: org.chesterirod.towntal.TalismanCommand
+  tal:
+    usage: /tal
+permissions:
+  Town.Tal:
+    default: op
